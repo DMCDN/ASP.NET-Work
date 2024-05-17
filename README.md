@@ -5,6 +5,9 @@
 * 後端：C# 
 * 資料庫：MSSQL
 
+* 首頁模板由同學協助製作
+![image](https://github.com/DMCDN/ASP.NET-Work/assets/128150279/55a879ae-a924-4882-9d46-c84e672c7a79)
+
   
 ## 會員功能
 
