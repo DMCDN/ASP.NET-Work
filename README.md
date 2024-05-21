@@ -5,7 +5,7 @@
 * 後端：C# 
 * 資料庫：MSSQL
 
-* 首頁與其他靜態網頁由同學協助製作
+* 首頁與其他靜態網頁由同學協助製作，我負責後端與資料庫
 
 
 ![image](https://github.com/DMCDN/ASP.NET-Work/assets/128150279/55a879ae-a924-4882-9d46-c84e672c7a79)
