@@ -1,0 +1,347 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mp.master.cs" Inherits="IM2023.mp" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+</asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="jpg" href="./pic/microchip-solid.svg">
+    <title>電腦主機網</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- 引入Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+   
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <link rel="stylesheet" href="menukit.css">
+
+    <script src="menukit.js"></script>
+
+    
+
+    <script>
+        function toggle() {
+            document.getElementById('nav-container').classList.toggle('is-active');
+            document.getElementById('btn-menu').classList.toggle('is-active');
+        }
+ 
+        function toggleMenu(id) {
+            console.log(id);
+            let nav = document.getElementById("main-nav");
+            if (id === 1) {
+                nav.style.left = "0%";
+            } else {
+                nav.style.left = "-100%";
+            }
+        }
+    </script>
+    <style>
+        * {
+  /* outline: 1px solid rgba(255,0,0,0.15); */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#form1 {
+  flex: 1;
+}
+
+#f1 {
+  background-color: #FFA500;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  float: left;
+}
+html {
+  height: 100%;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+
+header{
+  padding: 30px 20px;
+  background-color: indigo;
+  color: white;
+}
+
+.mobile-nav,
+.close-item {
+  display: none;
+}
+.nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  background-color: #333;
+}
+.nav .fa {
+  margin-left: 5px;
+}
+.nav-item {
+  position: relative;
+  background-color: #333;
+  background-color:#6c757d;
+}
+.nav-link,
+.dp-link {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 14px 18px;
+  transition: 0.25s;
+}
+.nav-item:hover,
+.nav-item .active {
+  background-color:#6c757d;
+}
+
+/* Dropdown Menu */
+.dp-menu {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  border-left: 3px solid #000;
+  z-index: 2;
+}
+.dp-item{
+  position: relative;
+}
+.dp-item:hover,
+.dp-item:hover > .dp-link {
+  background-color: #444;
+}
+
+.level-1 {
+  display: none;
+  background-color: #333;
+  width: 150px;
+}
+.level-2 {
+  display: none;
+  width: 200px;
+  top: 0px;
+  left: 100%;
+  font-size: 0.9rem;
+  background-color: #333;
+}
+
+.nav-item:hover > .level-1 {
+  display: block;
+}
+.dp-item:hover > .level-2 {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .mobile-nav {
+    display: block;
+    text-align: right;
+    padding: 10px 15px;
+    background-color: #333;
+  }
+  .mobile-btn {
+    color: #eee;
+    background-color: #666;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 1);
+    border: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.25s;
+  }
+  .mobile-btn:hover {
+    cursor: pointer;
+    background-color: #555;
+  }
+
+  .nav {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    top: 0;
+    transition: 0.25s;
+  }
+  #main-nav {
+    left: -100%;
+  }
+  li.close-item {
+    display: block;
+    padding: 20px 18px;
+    text-align: right;
+  }
+  .dp-menu {
+    width: 100%;
+    position: static;
+    border: none;
+  }
+  .level-1 > .dp-item > .dp-link {
+    padding-left: 28px;
+    background-color: #444;
+  }
+  .level-2 > .dp-item > .dp-link {
+    padding-left: 38px;
+    background-color: #555;
+  }
+  .dp-menu a:hover{
+    color: #ccc;
+  }
+  .fa-caret-right {
+    transform: rotate(90deg);
+  }
+}
+
+
+/* description */
+#description{
+  padding: 30px 20px;
+}
+#description h3{
+  margin: 16px 0;
+}
+#description p{
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ccc;
+  line-height: 1.4rem;
+}
+
+        #s1 {
+            background-color:#EEEEEE;width:100%;float:right;
+        }
+
+
+    </style>
+
+</head>
+
+
+
+
+
+
+<body>
+    <form id="form1" runat="server">
+
+    <!--nav id="nav0" >
+        <b>註冊登入預留區</b>
+    </!--nav-->
+		<!--<header>
+            <h1  style="color:#ffffff;">學分計算機</h1>
+            <p  style="color:#ffffff;">龍華科技大學 資訊管理系 畢業門檻與學分介紹</p>
+        </header>-->
+    <nav id="nav" class="navbar navbar-expand-sm  bg-secondary navbar-dar navbar-right">
+        <a class="navbar-brand" href="index.aspx"><img src="images/logo.png" alt="" width="100" height="60"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse " id="main_nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> <a class="nav-link bg-secondary" href="Shop.aspx"> 商品 </a></li>
+                <li class="nav-item"> <a class="nav-link bg-secondary" href="Company.aspx"> 關於我們 </a></li>
+                <li class="nav-item"> <a class="nav-link bg-secondary" href="map/store.html"> 地圖 </a></li>
+                <!--=]-->
+                <li class="nav-item dropdown active" id="myDropdown3"> 
+                    <a class="nav-link dropdown-toggle bg-secondary" href="#" data-bs-toggle="dropdown"> 客服中心 </a> 
+                    <ul class="dropdown-menu">
+                        <li> <a class="dropdown-item" href="ContectUs.aspx"> 聯絡我們</a></li>
+                        <li> <a class="dropdown-item" href="QA.aspx"> Q&A </a></li>
+                    </ul>
+                </li>
+                <!--登入功能-->
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle bg-secondaryy" href="#" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user"></i>
+                        <span id="usernameText" runat="server">您尚未登入</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="Register.aspx" id="registerButton" runat="server">註冊</a></li>
+                        <li><a class="dropdown-item" href="login.aspx" id="loginButton" runat="server">登入</a></li>
+                        <li><a class="dropdown-item" href="#" id="logoutButton" runat="server" onserverclick="LogoutButton_Click" >登出</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a runat="server" id="btnShoppingCart" class="nav-link bg-secondary" href="#" data-bs-toggle="modal" data-bs-target="#shoppingCartModal">購物車</a>
+                </li>
+            </ul>
+
+
+        </div>
+    </nav>
+
+
+
+
+    <!--nav id="nav2" >
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+        </asp:SiteMapPath>
+    </nav-->
+    <section id="s1">
+        <b></b>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" Visible="True">
+
+            </asp:ContentPlaceHolder>
+    </section>
+    <footer id="f1" >
+        &copy; 2023 <a href="https://www.lhu.edu.tw/index2.asp" target="_blank">龍華科技大學</a> <a href="https://im.lhu.edu.tw/" target="_blank">資訊管理學系</a>
+    </footer>
+
+
+
+<div class="modal fade" id="shoppingCartModal" tabindex="-1" aria-labelledby="shoppingCartModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="shoppingCartModalLabel">購物車內容</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="shoppingCart.aspx" style="width: 100%; height: 400px; border: none;"></iframe>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </form>
+</body>
+
+
+</html>
+

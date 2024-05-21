@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="龍華3C電子商城"  description="">
+        <siteMapNode url="intro.aspx" title="公司簡介"  description="龍華3C電子商城的公司簡介" >
+          <siteMapNode url="bi.aspx" title="營業範圍"  description="公司營業項目" />
+          <siteMapNode url="MngTeam.aspx" title="經營團隊"  description="董事會及專業經理人" >
+            <siteMapNode url="president.aspx" title="董事長"  description="董事長簡歷" />
+            <siteMapNode url="gm.aspx" title="總經理"  description="總經理簡歷" />
+          </siteMapNode>
+          <siteMapNode url="location.aspx" title="公司位置"  description="本公司的地址及地圖" />
+        </siteMapNode>
+        <siteMapNode url="products.aspx" title="公司產品"  description="" >
+          <siteMapNode url="notebook.aspx" title="筆電"  description="筆記型電腦" />
+          <siteMapNode url="tablet.aspx" title="平板"  description="平板電腦" />
+        </siteMapNode>
+      <siteMapNode url="" title="會員服務"  description="" >
+        
+      </siteMapNode>
+      <siteMapNode url="" title="客服中心"  description="" >
+        
+      </siteMapNode>
+      <siteMapNode url="" title="合作夥伴"  description="" >
+
+      </siteMapNode>
+    </siteMapNode>
+</siteMap>

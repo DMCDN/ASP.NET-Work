@@ -1,0 +1,304 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F66864B8-AC99-4ACD-A07C-01617B5D5901}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IM2023</RootNamespace>
+    <AssemblyName>IM2023</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44321</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\animate.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\font-awesome.css" />
+    <Content Include="assets\css\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\css\menu.css" />
+    <Content Include="assets\css\skins\mycolor.css" />
+    <Content Include="assets\css\skins\orange.css" />
+    <Content Include="assets\img\20200218.jpg" />
+    <Content Include="assets\img\359356203_204739905885547_5782183414421772552_n.jpg" />
+    <Content Include="assets\js\animheader.js" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\contact.js" />
+    <Content Include="assets\js\countto.js" />
+    <Content Include="assets\js\flexslider.js" />
+    <Content Include="assets\js\jquery.js" />
+    <Content Include="assets\js\parallax.js" />
+    <Content Include="assets\js\plugins.js" />
+    <Content Include="assets\js\portfolio.js" />
+    <Content Include="assets\js\scripts.js" />
+    <Content Include="assets\reservationform\css\main.css" />
+    <Content Include="assets\reservationform\css\normalize.css" />
+    <Content Include="assets\reservationform\img\bg.jpg" />
+    <Content Include="assets\reservationform\img\example_logo.png" />
+    <Content Include="assets\reservationform\js\main.js" />
+    <Content Include="assets\reservationform\js\plugins.js" />
+    <Content Include="assets\reservationform\js\vendor\jquery-1.10.2.min.js" />
+    <Content Include="assets\reservationform\js\vendor\modernizr-2.6.2.min.js" />
+    <Content Include="assets\reservationform\script.php" />
+    <Content Include="Company.aspx" />
+    <Content Include="images\20200218.jpg" />
+    <Content Include="images\359356203_204739905885547_5782183414421772552_n.jpg" />
+    <Content Include="ContectUs.aspx" />
+    <Content Include="h470.jpg" />
+    <Content Include="Home\images\event-r1.png" />
+    <Content Include="Home\images\event-r2.png" />
+    <Content Include="Home\images\event1.png" />
+    <Content Include="Home\images\event2.png" />
+    <Content Include="Home\images\event3.png" />
+    <Content Include="Home\images\event4.png" />
+    <Content Include="Home\images\event5.png" />
+    <Content Include="Home\images\event6.png" />
+    <Content Include="Home\images\event7.png" />
+    <Content Include="Home\images\event8.png" />
+    <Content Include="Home\images\event9.png" />
+    <Content Include="Home\images\news1.jpg" />
+    <Content Include="Home\images\news2.jpg" />
+    <Content Include="Home\images\news3.jpg" />
+    <Content Include="Home\images\news4.jpg" />
+    <Content Include="Home\images\sinya.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="images\logo.png" />
+    <Content Include="main.js" />
+    <Content Include="notebook.aspx" />
+    <Content Include="snow.js" />
+    <Content Include="style.css" />
+    <Content Include="styles.css" />
+    <Content Include="images\cat.mp4" />
+    <Content Include="images\Facebook.png" />
+    <Content Include="images\gmail.png" />
+    <Content Include="images\Lightning.mp4" />
+    <Content Include="map\Control.MiniMap.css" />
+    <Content Include="map\Control.MiniMap.js" />
+    <Content Include="map\data.js" />
+    <Content Include="map\index.html" />
+    <Content Include="map\map.aspx" />
+    <Content Include="map\L.Control.Sidebar.css" />
+    <Content Include="map\L.Control.Sidebar.js" />
+    <Content Include="map\leaflet-measure.css" />
+    <Content Include="map\leaflet-measure.js" />
+    <Content Include="map\leaflet.markercluster-src.js" />
+    <Content Include="map\leaflet.markercluster.js" />
+    <Content Include="map\leaflet.search.js" />
+    <Content Include="map\MarkerCluster.css" />
+    <Content Include="map\MarkerCluster.Default.css" />
+    <Content Include="map\markers.js" />
+    <Content Include="map\MousePosition-Control.css" />
+    <Content Include="map\MousePosition-Control.js" />
+    <Content Include="map\store.html" />
+    <Content Include="map\styles.css" />
+    <Content Include="map\t3.js" />
+    <Content Include="QA.aspx" />
+    <Content Include="Intro01.aspx" />
+    <Content Include="shoppingCart.aspx" />
+    <Content Include="shop.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="next.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Company.aspx.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company.aspx.designer.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContectUs.aspx.cs">
+      <DependentUpon>ContectUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContectUs.aspx.designer.cs">
+      <DependentUpon>ContectUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="map\map.aspx.cs">
+      <DependentUpon>map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="map\map.aspx.designer.cs">
+      <DependentUpon>map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="notebook.aspx.cs">
+      <DependentUpon>notebook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="notebook.aspx.designer.cs">
+      <DependentUpon>notebook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QA.aspx.cs">
+      <DependentUpon>QA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QA.aspx.designer.cs">
+      <DependentUpon>QA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intro01.aspx.cs">
+      <DependentUpon>Intro01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intro01.aspx.designer.cs">
+      <DependentUpon>Intro01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shoppingCart.aspx.cs">
+      <DependentUpon>shoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shoppingCart.aspx.designer.cs">
+      <DependentUpon>shoppingCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shop.aspx.cs">
+      <DependentUpon>shop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shop.aspx.designer.cs">
+      <DependentUpon>shop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mp.Master.cs">
+      <DependentUpon>mp.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mp.Master.designer.cs">
+      <DependentUpon>mp.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mp.Master" />
+    <Content Include="assets\css\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\css\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\css\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\css\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\css\fonts\FontAwesome.otf" />
+    <Content Include="assets\reservationform\css\dateTimePicker.less" />
+    <Content Include="assets\reservationform\css\main.less" />
+    <Content Include="assets\reservationform\css\mixins.less" />
+    <Content Include="assets\reservationform\css\styleSelect.less" />
+    <Content Include="assets\reservationform\css\variables.less" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5236</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44321/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 套件。請啟用 NuGet 套件還原，以下載該套件。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
